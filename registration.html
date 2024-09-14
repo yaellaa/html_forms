@@ -20,7 +20,7 @@
 
         main {
             margin: auto;
-            height: 30rem;
+            height: 50rem;
             width: 60%; 
             background-color: #b8b8ff;
             border-radius: 1rem;
@@ -91,7 +91,68 @@
         }
     </style>
 </head>
+
 <body>
-    
+            <main>
+                <h1>Registration</h1>
+                <form action="action.php">
+                    <div class="flex-field">
+                        <label for="username" class="grid-label">username</label>
+                        <input type="text" name="username" placeholder="add your name" minlength="5">
+                    </div>
+                    <div class="flex-field">
+                        <label for="email" class="grid-label">email</label>
+                        <input type="email" name="email" placeholder="email">
+                    </div>
+                    <div class="flex-field">
+                        <label for="password" class="grid-label">password</label>
+                        <input type="password" name="password" id="" placeholder="password">
+                    </div>
+                    <div class="flex-field">
+                        <label for="mobile number" class="grid-label">mobile number</label>
+                        <input type="number" name="cellphone_number" id="" placeholder="mobile number">
+                    </div>
+                    <div class="flex-field">
+                        <label for="hidden" class="grid-label"></label>
+                        <input type="hidden" value="abic1234" id="" name="secret_key">
+                        <textarea name="address" id=""rows="5"></textarea>
+                    </div>
+                    <div class="flex-field">
+                        <label for="date" class="grid-label">Date</label>
+                        <input type="date" name="date" id="">
+                    </div>
+                    <div class="flex-field">
+                        <label for="datetime-local" class="grid-label">Date/Time</label>
+                        <input type="datetime-local" name="datetime" id="">
+                    </div>
+                    <center>
+                    <div>
+                        <input type="radio" name="skills" value="Programming"><label for="skills">Programming</label>
+                        <input type="radio" name="skills" value="Java"><label for="skills">Java</label>
+                        <input type="radio" name="skills" value="Web" ><label for="skills">Web</label><br>
+                        <select name="year-level" id="year-level">
+                            <option value="" disabled selected>--Select year level--</option>
+                            <optgroup label="College">
+                                <option value="1">BSIT</option>
+                                <option value="2">BSA</option>
+                            </optgroup>
+                            <option value="1">First year</option>
+                            <option value="2">Second year</option>
+                            <option value="3">Third year</option>
+                            <option value="4">Fourth year</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="file" class="grid-label">Files</label>
+                        <input type="file" name="file-upload" id="" accept=".jpg,.png,.gif">
+                    </div>
+                        <div>
+                            <input type="reset" value="reset">
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </center>
+            </main>
 </body>
 </html> 
